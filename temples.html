@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Album</title>
+    <meta name="description" content="Media query learning actibity example page.">
+    <meta name="author" content="Ethan M. Shirley">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><span id="temple-title"> Temple Album</span></h1>
+        <button id="menu" type="button" aria-label="Open navigation menu"></button>
+        
+        <nav id="navigation">
+            <ul>
+                <li><a href="" target="_blank">Home</a></li>
+                <li><a href="">Old</a></li>
+                <li><a href="" target="_blank">New</a></li>
+                <li><a href="" target="_blank">Large</a></li>
+                <li><a href="" target="_blank">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Home</h2>
+        <div class="temple-grid">
+            <figure>
+                <img src="images/fresno-temple.webp" alt="fresno california temple">
+                <figcaption>Fresno California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gilbert-arizona-temple.webp" alt="gilbert arizona temple">
+                <figcaption>Gilbert Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mesa-arizona-temple.webp" alt="mesa arizona temple">
+                <figcaption>Mesa Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="images/phoenix-arizona-temple.webp" alt="phoenix arizona temple">
+                <figcaption>Phoenix Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo-city-center.webp" alt="provo city center temple">
+                <figcaption>Provo Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rexburg-temple.webp" alt="rexburg idaho temple">
+                <figcaption>Rexburg Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome-temple.webp" alt="rome italy temple">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san-diego-temple.webp" alt="san diego california temple">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tucson-arizona-temple.webp" alt="tucson arizona temple">
+                <figcaption>Tucson Arizona</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#10070; Ethan Shirley &#10070; California</p>
+        <div class="lastModified">
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
