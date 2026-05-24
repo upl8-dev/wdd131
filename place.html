@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WDD 131 - Country Page</title>
+  <meta name="description" content="Information about Singapore including geographical data and weather data.">
+  <meta name="author" content="Ethan M. Shirley">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Singapore</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/singapore-large.webp" media="(min-width: 800px)">
+        <img src="images/singapore-small.webp" alt="Singapore city skyline">
+      </picture>
+
+      <section class="card data-card">
+        <h2>Data</h2>
+
+        <p><span class="label">Area:</span> <span>736.3 sq km</span></p>
+        <p><span class="label">Population:</span> <span>6,111,200</span></p>
+        <p><span class="label">Capital:</span> <span>Singapore</span></p>
+        <p><span class="label">Languages:</span> <span>English, Malay, Mandarin Chinese, Tamil</span></p>
+        <p><span class="label">Currency:</span> <span>Singapore Dollar</span></p>
+        <p><span class="label">Time Zone:</span> <span>UTC+8</span></p>
+        <p><span class="label">Calling Code:</span> <span>+65</span></p>
+        <p><span class="label">Internet TLD:</span> <span>.sg</span></p>
+      </section>
+
+      <section class="card weather-card">
+        <div class="weather-heading">
+          <h2>Weather</h2>
+          <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+        </div>
+
+        <p><span class="label">Temperature:</span> <span id="temperature">27°C</span></p>
+        <p><span class="label">Conditions:</span> <span>Mostly Cloudy</span></p>
+        <p><span class="label">Wind:</span> <span id="wind-speed">2 km/h</span></p>
+        <p><span class="label">Wind Chill:</span> <span id="wind-chill"></span></p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> &#10070; Ethan Shirley &#10070; California</p>
+    <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
