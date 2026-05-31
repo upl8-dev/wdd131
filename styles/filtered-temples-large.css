@@ -1,0 +1,45 @@
+@media only screen and (min-width: 500px) {
+    header {
+        padding: 1.5rem;
+        flex-wrap: nowrap;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: var(--header-text-color);
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        background-color: rgb(138, 62, 62);
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 1rem;
+    }
+
+    figure img {
+        max-width: 280px;
+    }
+}
