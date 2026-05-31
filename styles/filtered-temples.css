@@ -13,6 +13,8 @@
     --button-hover: rgb(68, 68, 68);
     --accent-color: rgb(255, 209, 102);
     --link-color: rgb(0, 92, 83);
+    --section-bg-color: rgb(240, 240, 240);
+    --header-bg-color: rgb(138, 62, 62);
 }
 
 body {
@@ -121,13 +123,13 @@ section img {
     height: 200px;
     object-fit: cover;
     margin-top: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 10px #333;
+    border: 1px solid var(--nav-color 0.3);
+    box-shadow: 0 0 10px var(--button-hover);
 }
 
 section {
     padding: 1rem;
-    border: 0.5px solid rgba(0, 0, 0, 0.2);
-    background-color: rgb(230, 230, 230);
+    border: 0.5px solid var(--nav-color 0.5);
+    background-color: var(--section-bg-color);
     text-align: center;
 }
