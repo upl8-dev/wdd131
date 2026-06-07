@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan Shirley">
+    <meta name="description" content="A simple, user-friendly product review form to rate items, share feedback, and submit installation details.">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+
+    <main>
+        <section id="reviewDetails"></section>
+
+        <p>Total Reviews Submitted: <span id="reviewCounter"></span></p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#10070; Ethan Shirley &#10070; California</p>
+        <div class="lastModified">
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const details = document.getElementById("reviewDetails");
+
+        let html = "";
+        params.forEach((value, key) => {
+            html += `<p><strong>${key}:</strong> ${value}</p>`;
+        });
+        details.innerHTML = html;
+
+        let count = Number(localStorage.getItem("reviewCount")) || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+        document.getElementById("reviewCounter").textContent = count;
+    </script>
+
+    <script src="scripts/footer.js"></script>
+</body>
+</html>
