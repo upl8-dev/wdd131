@@ -6,6 +6,7 @@
     <meta name="author" content="Ethan Shirley">
     <meta name="description" content="A simple, user-friendly product review form to rate items, share feedback, and submit installation details.">
     <title>Product Review Form</title>
+
     <link rel="stylesheet" href="product-review/styles/styles.css">
     <script src="product-review/scripts/script.js" defer></script>
 </head>
@@ -26,27 +27,27 @@
             <fieldset>
                 <legend>Overall Rating</legend>
 
-                <label>
+                <label class="option-row" for="rating1">
                     <input type="radio" id="rating1" name="rating" value="1" required>
                     1
                 </label>
 
-                <label>
+                <label class="option-row" for="rating2">
                     <input type="radio" id="rating2" name="rating" value="2">
                     2
                 </label>
 
-                <label>
+                <label class="option-row" for="rating3">
                     <input type="radio" id="rating3" name="rating" value="3">
                     3
                 </label>
 
-                <label>
+                <label class="option-row" for="rating4">
                     <input type="radio" id="rating4" name="rating" value="4">
                     4
                 </label>
 
-                <label>
+                <label class="option-row" for="rating5">
                     <input type="radio" id="rating5" name="rating" value="5">
                     5
                 </label>
@@ -58,27 +59,27 @@
             <fieldset>
                 <legend>Useful Features (check all that apply)</legend>
 
-                <label>
+                <label class="option-row" for="feature1">
                     <input type="checkbox" id="feature1" name="features" value="durability">
                     Durability
                 </label>
 
-                <label>
+                <label class="option-row" for="feature2">
                     <input type="checkbox" id="feature2" name="features" value="ease-of-use">
                     Ease of Use
                 </label>
 
-                <label>
+                <label class="option-row" for="feature3">
                     <input type="checkbox" id="feature3" name="features" value="performance">
                     Performance
                 </label>
 
-                <label>
+                <label class="option-row" for="feature4">
                     <input type="checkbox" id="feature4" name="features" value="design">
                     Design
                 </label>
 
-                <label>
+                <label class="option-row" for="feature5">
                     <input type="checkbox" id="feature5" name="features" value="value">
                     Value for Money
                 </label>
