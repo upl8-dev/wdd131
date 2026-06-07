@@ -1,3 +1,10 @@
+@media (min-width: 600px) {
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
 :root {
     --bg: #f7f7f7;
     --card: #ffffff;
@@ -47,7 +54,7 @@ input[type="date"],
 select,
 textarea {
     width: 100%;
-    max-width: 33.2rem;
+    box-sizing: border-box;
     padding: 0.5rem;
     border: 1px solid var(--border);
     border-radius: 5px;
