@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ethan Shirley">
+  <meta name="description" content="Small Steps is a 100-day habit website that helps visitors build simple daily habits and track their progress.">
+  <title>Small Steps | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-title">
+      <h1>Small Steps</h1>
+      <p>100 Days of Small Habits</p>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="habits.html">Habits</a>
+      <a href="progress.html">Progress</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card intro-card">
+      <div>
+        <h2>Start with one small action today.</h2>
+        <p>Small Steps helps you focus on simple daily habits for 100 days. Choose a habit, record a reflection, and watch your progress grow one day at a time.</p>
+      </div>
+      <img src="images/steps.svg" width="220" height="160" loading="lazy" alt="Simple steps leading upward">
+    </section>
+
+    <div class="layout-grid">
+      <section aria-label="Daily habit tools">
+        <article class="card dashed-card">
+          <h2>Today’s Habit</h2>
+          <p id="todayHabit">Read for 10 minutes</p>
+          <button id="newHabitButton" type="button">Show Another Habit</button>
+        </article>
+
+        <article class="card dashed-card">
+          <h2>Daily Reflection Prompt</h2>
+          <p id="reflectionPrompt">What small action helped you move forward today?</p>
+          <form id="reflectionForm">
+            <label for="reflection">Your reflection</label>
+            <textarea id="reflection" name="reflection" rows="4" required></textarea>
+
+            <label for="mood">How did today feel?</label>
+            <select id="mood" name="mood" required>
+              <option value="" selected disabled>Choose one</option>
+              <option value="Easy">Easy</option>
+              <option value="Okay">Okay</option>
+              <option value="Hard">Hard</option>
+            </select>
+
+            <button type="submit">Save Reflection</button>
+          </form>
+          <p id="formMessage" class="message" aria-live="polite"></p>
+        </article>
+      </section>
+
+      <aside aria-label="Progress summary">
+        <article class="card dashed-card">
+          <h2>Progress</h2>
+          <p id="dayCount">Day 0 of 100</p>
+          <div class="progress-bar" aria-label="100 day progress bar">
+            <span id="progressFill"></span>
+          </div>
+        </article>
+
+        <article class="card dashed-card">
+          <h2>Streak / Stats</h2>
+          <p id="streakCount">Current streak: 0 days</p>
+          <p id="completedCount">Total habits completed: 0</p>
+        </article>
+
+        <article class="card dashed-card">
+          <h2>Next Milestone</h2>
+          <p id="milestoneText">Reach Day 10 to complete your first milestone.</p>
+        </article>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">Home</a> ·
+      <a href="about.html">About</a> ·
+      <a href="references.html">References</a>
+    </p>
+    <p>&copy; <span class="current-year"></span> Small Steps</p>
+  </footer>
+</body>
+</html>

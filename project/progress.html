@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ethan Shirley">
+  <meta name="description" content="Progress tracker for the Small Steps 100-day habit challenge.">
+  <title>Small Steps | Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-title">
+      <h1>Small Steps</h1>
+      <p>100 Days of Small Habits</p>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="habits.html">Habits</a>
+      <a href="progress.html" class="active">Progress</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card intro-card">
+      <div>
+        <h2>Your 100-day progress</h2>
+        <p>This page uses saved reflections from your browser to show your progress. Each saved reflection counts as one completed day.</p>
+      </div>
+      <img src="images/progress.svg" width="220" height="160" loading="lazy" alt="A progress chart rising upward">
+    </section>
+
+    <section class="progress-page-grid">
+      <article class="card dashed-card">
+        <h2>Progress</h2>
+        <p id="dayCount">Day 0 of 100</p>
+        <div class="progress-bar" aria-label="100 day progress bar">
+          <span id="progressFill"></span>
+        </div>
+        <p id="milestoneText">Reach Day 10 to complete your first milestone.</p>
+      </article>
+
+      <article class="card dashed-card">
+        <h2>Streak / Stats</h2>
+        <p id="streakCount">Current streak: 0 days</p>
+        <p id="completedCount">Total habits completed: 0</p>
+        <button id="clearProgressButton" type="button">Clear Progress</button>
+        <p id="clearMessage" class="message" aria-live="polite"></p>
+      </article>
+    </section>
+
+    <section>
+      <h2 class="section-title">Recent Reflections</h2>
+      <div id="reflectionList" class="reflection-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">Home</a> ·
+      <a href="about.html">About</a> ·
+      <a href="references.html">References</a>
+    </p>
+    <p>&copy; <span class="current-year"></span> Small Steps</p>
+  </footer>
+</body>
+</html>

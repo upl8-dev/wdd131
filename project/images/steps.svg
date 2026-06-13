@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="160" viewBox="0 0 220 160" role="img" aria-labelledby="stepsTitle stepsDesc">
+  <title id="stepsTitle">Simple steps</title>
+  <desc id="stepsDesc">Rounded steps leading toward a small sun.</desc>
+  <rect width="220" height="160" fill="#f4ede4"/>
+  <circle cx="170" cy="38" r="20" fill="#f7c85f"/>
+  <rect x="28" y="118" width="54" height="16" rx="4" fill="#2f6f5e"/>
+  <rect x="72" y="94" width="54" height="16" rx="4" fill="#2f6f5e"/>
+  <rect x="116" y="70" width="54" height="16" rx="4" fill="#2f6f5e"/>
+  <path d="M45 60 C72 28 104 42 126 28" fill="none" stroke="#1f2933" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="45" cy="60" r="7" fill="#1f2933"/>
+  <circle cx="126" cy="28" r="7" fill="#1f2933"/>
+</svg>
